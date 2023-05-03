@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <Layout></Layout>,
     children:[
      {
-      path:"home",
+      path:"/home",
       element:<Home></Home>,
      },
      {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
       element:<Register></Register>
      },
      {
-      path:"/chefdetails/:id",
+      path:"chefdetails/:id",
       element:<ChefDetails></ChefDetails>,
       loader:({params})=> fetch(`http://localhost:5050/cData/${params.id}`)
      }
