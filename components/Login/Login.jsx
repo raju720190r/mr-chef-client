@@ -1,12 +1,17 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
-import Register from '../Register/Register';
 
 const Login = () => {
+
+
+    const handleLogin =()=>{
+        event.preventDefault();
+    }
     return (
         <div>
-            <h2 className='text-5xl font-bold'>Login Section</h2>
-            <Link to="/register">Register</Link>
+            <h2>This Is Login</h2>
         </div>
     );
 };

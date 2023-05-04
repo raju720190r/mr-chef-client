@@ -24,7 +24,7 @@ const Chef = ({ chef }) => {
                             <ListGroup.Item>Likes : {likes}</ListGroup.Item>
                         
                         </ListGroup>
-                        <Link to={`/chefdetails/${chef.id}`}><Button variant='primary' className='text-dark'>View Details</Button></Link>
+                        <Link to={`/chefdetails/${chef.id}`}><Button className='w-100 text-dark' variant='primary'>View Details</Button></Link>
                     </Card.Body>
                 </Card>
             </CardGroup>

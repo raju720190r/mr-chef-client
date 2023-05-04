@@ -11,10 +11,10 @@ import Layout from '../components/Layout/Layout.jsx';
 import Home from '../components/Home/Home.jsx';
 import Blog from '../components/Blog/Blog.jsx';
 import Contact from '../components/Contact/Contact.jsx';
-import Login from '../components/Login/Login.jsx';
 import Register from '../components/Register/Register.jsx';
 import ChefDetails from '../components/Home/Chef/ChefDetails.jsx';
 import AuthProvider from '../Provider/AuthProvider.jsx';
+import Login from '../components/Login/Login.jsx';
 
 const router = createBrowserRouter([
   {
