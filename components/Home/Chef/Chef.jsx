@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const Chef = ({ chef }) => {
-    const { chef_picture, chef_name, years_of_experience, description, likes, num_recipes } = chef;
+    const { chef_picture, chef_name, years_of_experience, description, likes, num_recipes,view_recipes_button } = chef;
 
     return (
         <div>
@@ -24,7 +24,7 @@ const Chef = ({ chef }) => {
                             <ListGroup.Item>Likes : {likes}</ListGroup.Item>
                         
                         </ListGroup>
-                        <Link to={`/chefdetails/${chef.id}`}><Button className='w-100 text-dark' variant='primary'>View Details</Button></Link>
+                        <Link to={`/chefdetails/${chef.id}`}><Button className='w-100 text-dark' variant='primary'>{view_recipes_button}</Button></Link>
                     </Card.Body>
                 </Card>
             </CardGroup>

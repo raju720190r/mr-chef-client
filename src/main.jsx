@@ -15,6 +15,7 @@ import Register from '../components/Register/Register.jsx';
 import ChefDetails from '../components/Home/Chef/ChefDetails.jsx';
 import AuthProvider from '../Provider/AuthProvider.jsx';
 import Login from '../components/Login/Login.jsx';
+import Chef from '../components/Home/Chef/Chef.jsx';
 
 const router = createBrowserRouter([
   {
