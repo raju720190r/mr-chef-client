@@ -1,8 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
-#root{
-    font-family: 'Roboto Slab', serif;
-} 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root{
+    font-family: 'Roboto Slab', serif;
+} 
+.btn-primary {
+    @apply text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center
+}
+
+.btn-primary:hover {
+    @apply transform scale-[1.1]
+}
+
+.LazyLoad {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s ease-in-out;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 2.5s ease-in-out;
+    -ms-transition: all 2.5s ease-in-out;
+    -o-transition: all 2.5s ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.blog-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
