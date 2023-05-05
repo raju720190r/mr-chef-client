@@ -9,7 +9,7 @@ const Chefs = () => {
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
         setIsLoading(true);
-        fetch('http://localhost:5000/chefs')
+        fetch('https://chef-server-plum.vercel.app/chefs')
             .then(res => res.json())
             .then(data => {
                 setChefs(data);

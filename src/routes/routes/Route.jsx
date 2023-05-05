@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             {
                 path: '/chef/:id',
                 element:  <PrivetRoute><VewRecipes/></PrivetRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/chef/${params.id}`)
+                loader: ({params})=> fetch(`https://chef-server-plum.vercel.app/chef/${params.id}`)
             }
         ]
     },
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog/>,
-                loader: ()=> fetch('http://localhost:5000/blogs')
+                loader: ()=> fetch('https://chef-server-plum.vercel.app/blogs')
 
             },
         ]
